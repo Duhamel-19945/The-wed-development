@@ -5,9 +5,11 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Group Projet</title>
-    <link rel="stylesheet" href="VOTRE-FEUILLE-DE-STYLE-ICI.css">
+    <title>Blog prjet</title>
     <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/3357889f5c.js" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
 </head>
 
 <body>
@@ -15,19 +17,38 @@
         <nav>
             <h1>GROW</h1>
 
-            <menu class="options">
-                <li><a href="">ARTICLES</a></li>
-                <li><a href="">PODCAST</a></li>
-                <li><a href="">EVENTS</a></li>
-                <li><a href="">UPDATES</a></li>
-                <li><a href="">SUBSCRIBE</a></li>
-                <li><a href="">ABOUT</a></li>
-                <div class="search">
+            <!-- Modifiez la classe de votre menu ci-dessous à 'main-menu' et faîtes le changement au niveau du CSS également -->
+            <menu class="main-menu">
+                <li><a href="">articles</a></li>
+                <li><a href="">podcast</a></li>
+                <li><a href="">events</a></li>
+                <li><a href="">updates</a></li>
+
+                <!-- <li><a href="">SUBSCRIBE</a></li>
+                <li><a href="">ABOUT</a></li> -->
+
+                <!-- <div class="search">
                     <li><span class="materiel-option">search</span></li>
-                </div>
+                </div> -->
             </menu>
+
+            <!-- Vous feriez mieux de créer un 2ème menu pour SUBSCRIBE et ABOUT. Je vous crée le menu ci-dessous : -->
+            <ul>
+                <li><a href="">subscribe</a></li>
+                <li><a href="">about</a></li>
+            </ul>
+
+            <!-- Le search n'est pas censé être dans le <menu>, alors, je vous l'ai déplacé ci-dessous -->
+            <div class="search">
+                <!-- Veuillez supprimer la balise <li> que vous avez employé ci-dessous. Il faut uniquement le <span> -->
+                <span class="material-icons">search</span>
+            </div>
         </nav>
-        <div class="beginning">
+    </header>
+
+    <!-- Vous feriez mieux d'employer le <aside> pour la section suivante au lieu de <div>. Je vous refais la structure de cette section ci-dessous -->
+
+    <!-- <div class="beginning">
             <div class="begin">
                 <h3 class="date">FEBRUARY 3. 2023</h3>
                 <h1>why we need more developers today</h1>
@@ -41,10 +62,79 @@
             <div class="picture">
                 <img src="../group projet/asset/undraw_programming_re_kg9v.svg" alt="undraw_programming">
             </div>
-        </div>
-    </header>
+        </div> -->
 
-    <p>In today fast-paced, technology-driven world, the demande for skilled devellopers is at an all-time high. the
+    <aside class="infos">
+        <!-- JE PROPOSE UN NOM DE CLASSE PLUS DESCRIPTIF COMME INFOS -->
+        <h3 class="date">AVRI 24. 2023</h3>
+        <h1>why we need more developers today</h1>
+        <div class="redacteurs">
+            <p class="ecrivain"><i>By:</i><span>ADEYEMI DUHAMEL</span></p>
+            <p class="illustration"><i>illustration:</i><a href="" https://undraw.co/illustrations"">UNDRAW.CO</a>
+            </p>
+        </div>
+
+        <!-- VEUILLEZ PERSONALISER CES LIENS -->
+        <ul class="socials">
+            <a href="https://web.facebook.com/profile.php?id=100084341804827">
+                <i class="fa-brands fa-facebook"></i>
+            </a>
+            <a href="https://twitter.com/gbecsen">
+                <i class="fa-brands fa-twitter"></i>
+            </a>
+            <a href="https://github.com/gidbecxa">
+                <i class="fa-brands fa-github"></i>
+            </a>
+            <a href="mailto: duhamelstella1994@gmail.com">
+                <i class="fa-solid fa-envelope"></i>
+            </a>
+        </ul>
+    </aside>
+
+    <div class="picture">
+        <!-- Votre chemin d'accès n'existe pas du tout. Je vous aide à le refaire -->
+
+        <!-- <img src="../group projet/asset/undraw_programming_re_kg9v.svg" alt="undraw_programming"> -->
+        <img src="./assets/undraw_programming_re_kg9v.svg" alt="programming-image-by-undraw">
+    </div>
+
+    <!-- </header> -->
+    <!-- Le <header> ne se termine pas ici, mais après la <nav>. Voir la ligne juste après </nav> -->
+
+    <!-- ........................................................... -->
+
+    <!-- JE NE SUIS PAS FIER DE FAIRE LE CONSTAT QUE VOUS N'AVEZ MÊME PAS FAIT L'EFFORT DE SAISIR TOUT LE TEXTE. CECI NE FAIT PAS PREUVE DE VOTRE DÉTERMINATION ET VOLONTÉ À SURMONTER LA DIFFICULTÉ SUR VOTRE CHEMIN DE DÉVELOPPEUR. VEUILLEZ BIEN DONNER BEAUCOUP PLUS D'EFFORTS ET D'ÉNERGIE QUE VOUS MANIFESTEZ À PRÉSENT -->
+
+    <!-- Je vous guide à créer la structure pour le texte. Veuillez retrouver tous les paragraphes dans ./asset/content.txt -->
+
+    <!-- Pour commencer, je crée un <main> qui indique la section principale de la page -->
+    <main>
+        <!-- Ensuite, je crée la balise <article> dans le <main> qui indique une section d'article  et qui doit contenir tous les paragraphes-->
+        <article>
+            <p>
+                Dans le monde actuel, rapide et axé sur la technologie, <em><a href="https://code.org/promote/stats">la demande de développeurs qualifiés</a></em> est à son plus haut niveau. La raison en est simple : la technologie change la façon dont nous vivons, travaillons et interagissons les uns avec les autres, et ce sont les développeurs qui rendent tout cela possible.
+            </p>
+            
+            <p>
+                L'une des principales raisons pour lesquelles nous avons besoin de plus de développeurs est que <em><a href="https://www.inc.com/john-rampton/the-tech-industry-is-booming-heres-why-we-need-more-developers.html">la technologie transforme chaque industrie</a></em>. De la santé à la finance, en passant par l'éducation et la vente au détail, la technologie joue un rôle crucial dans le fonctionnement et la compétitivité des entreprises. Par conséquent, les entreprises recherchent constamment de nouvelles façons innovantes d'utiliser la technologie pour améliorer leurs produits et services. Cela stimule la demande de développeurs qui ont <em><a href="https://www.forbes.com/sites/cognitiveworld/2020/07/08/the-most-in-demand-tech-skills-of-2020/?sh=7fcb5a6e4c3b">les compétences</a></em> pour concevoir, construire et maintenir ces systèmes de pointe.
+            </p>
+            
+            <p>
+                Une autre raison pour laquelle nous avons besoin de plus de développeurs est que la technologie crée également <em><a href="https://medium.com/better-programming/why-diversity-in-tech-matters-and-how-it-can-help-meet-the-growing-demand-for-developers-3ed7c4dfa652">de nouvelles opportunités d'emploi</a></em>. Par exemple, la montée de <em><a href="https://aws.amazon.com/what-is-cloud-computing/">l'informatique en nuage</a></em>, de l'<em><a href="https://cloud.google.com/learn/what-is-artificial-intelligence">intelligence artificielle</a></em> et de l'<em><a href="https://www.oracle.com/internet-of-things/what-is-iot/">Internet des objets (IdO)</a></em> conduit au développement de nouveaux rôles passionnants dans des domaines tels que l'apprentissage automatique, la science des données et la cybersécurité. Ces rôles sont non seulement très gratifiants, mais offrent également des salaires attractifs, ce qui en fait un choix de carrière recherché pour de nombreuses personnes.
+            </p>
+            
+            <p>
+                Enfin, nous avons besoin de plus de développeurs car la technologie change la façon dont nous vivons. De l'achat en ligne et des opérations bancaires à distance aux réseaux sociaux et aux messageries instantanées, la technologie a rendu notre vie plus facile et plus pratique. Les développeurs jouent un rôle crucial dans la création de ces outils et plates-formes qui rendent notre vie meilleure, et nous avons besoin de plus d'entre eux pour poursuivre cette tendance et apporter encore plus d'avancées technologiques à l'avenir.
+            </p>
+            
+            <p>
+                En conclusion, le besoin de développeurs est plus grand aujourd'hui <em><a href="https://www.brookings.edu/research/the-growing-shortage-of-information-technology-workers-in-the-us/">que jamais auparavant</a></em>. Avec la transformation de chaque industrie par la technologie et la création de nouvelles opportunités d'emploi, c'est maintenant le moment de considérer une carrière dans le développement. Que vous soyez un professionnel chevronné ou que vous débutiez, les opportunités sont infinies et les récompenses sont nombreuses.
+            </p>
+            <!-- Mettez chaque paragrphe ici. Vous retrouverez les paragraphes dans ./asset/content.txt -->
+        </article>
+    </main>
+
+    <!-- <p>In today fast-paced, technology-driven world, the demande for skilled devellopers is at an all-time high. the
         reason for this is simple.technologie is changing the waywe live, work,and interact with each other,and
         developers are the ones who are making it all happen.</p>
     <p>one of the main reasons we need more developers is because technologyis transforming every industry.from
@@ -57,7 +147,9 @@
         example, the rise of cloud computing,artificial intelligence,and the internet of Things (IoT)
         is leaning to the development of new and exciting roles in areas such as machine learning,data science,and
         cybersecurite. these roles not highty rewarding but also offer attractive salaries,making them a sought-after
-        career choice for many people </p>
+        career choice for many people </p> -->
+
+    <footer></footer>
 </body>
 
 </html>
